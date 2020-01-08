@@ -1,0 +1,13 @@
+# Reset config
+rm -rf interface
+rm -rf password
+touch password
+rm -rf user
+touch user
+rm -rf current.txt
+rm -rf lastscan.txt
+rm -rf netlist.txt
+touch netlist.txt
+rm -rf state.txt
+rm -rf temp.conf
+rm -rf ../conf/*

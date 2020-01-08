@@ -1,0 +1,2 @@
+interface=$(cat interface)
+ip link show | grep $interface > state.txt

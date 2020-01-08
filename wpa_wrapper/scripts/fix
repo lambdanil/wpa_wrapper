@@ -1,0 +1,4 @@
+dir = $pwd
+cd ../networks
+n=1; for file in *; do mv $file $n; n=$((n+1)); done
+cd $dir

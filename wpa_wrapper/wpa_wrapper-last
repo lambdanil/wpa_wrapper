@@ -1,0 +1,1 @@
+dir=$(pwd); cd /usr/share/wpa_wrapper/; cd scripts; bash net; cd $dir

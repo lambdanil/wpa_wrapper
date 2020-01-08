@@ -1,0 +1,3 @@
+interface=$(cat interface)
+rm -rf ../conf/wpa_supplicant-$interface
+cp temp.conf ../conf/wpa_supplicant-$interface.conf

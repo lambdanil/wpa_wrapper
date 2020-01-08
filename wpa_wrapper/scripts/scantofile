@@ -1,0 +1,2 @@
+net_interface=$(cat interface)
+iw $net_interface scan | grep SSID > lastscan.txt

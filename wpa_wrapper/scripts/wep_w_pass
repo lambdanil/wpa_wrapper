@@ -1,0 +1,13 @@
+interface=$(cat interface)
+ssid=$(cat wep_ssid)
+password=$(cat wep_pass)
+bash xnet
+iwconfig $interface ap any
+iwconfig $interface essid $ssid
+if not cat wep_pass | grep -q none
+then
+     iwconfig $interface key s:$password
+fi    
+iwconfig $interface enc on
+ip link set $interface up
+dhclient $interface

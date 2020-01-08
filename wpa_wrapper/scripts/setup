@@ -1,0 +1,3 @@
+rfkill unblock wlan
+ip link set $(cat interface) up
+iw $(cat interface) set power_save off

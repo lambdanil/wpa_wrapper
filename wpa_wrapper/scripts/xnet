@@ -1,0 +1,5 @@
+interface=$(cat interface)
+rfkill block wlan
+ip link set $interface down
+iw $interface set power_save on
+killall wpa_supplicant

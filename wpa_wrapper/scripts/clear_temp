@@ -1,0 +1,5 @@
+rm -rf netlist.txt
+rm -rf current.txt
+rm -rf lastscan.txt
+rm -rf temp.conf
+rm -rf state.txt

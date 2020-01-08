@@ -1,0 +1,8 @@
+interface=$(cat interface)
+rfkill unblock wlan
+ip link set $interface up
+iw $interface set power_save off
+killall wpa_supplicant
+cd ../conf
+wpa_supplicant -i $interface -B -c wpa_supplicant-$interface.conf
+cd ../scripts
